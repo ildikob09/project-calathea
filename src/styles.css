@@ -9,12 +9,23 @@ body {
 
 .grid {
   display: grid;
+  grid-gap: 64px;
+}
+
+.grid-2-cols {
+  grid-template-columns: auto auto;
+}
+
+.grid-3-cols-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
+
 section {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 100px 0;
 }
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
     url("../img/calathea.jpg");
@@ -63,13 +74,50 @@ header a {
   margin-top: 32px;
 }
 
+main {
+  background-color: white;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+.img-responsive {
+  max-width: 100%;
+}
+main h2 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 5px;
+  text-align: left;
+  opacity: 0.3;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+main h3 {
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  text-align: left;
+  margin: 0;
+}
+
+main p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
 footer {
   color: white;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
     url("../img/calathea-footer.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 0;
+
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -112,5 +160,9 @@ footer a {
   }
   header h3 {
     font-size: 12px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
   }
 }
