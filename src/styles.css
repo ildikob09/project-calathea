@@ -20,7 +20,7 @@ body {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
-.card-grid {
+.grid-3-cols {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -37,10 +37,6 @@ section.secondary-section {
   text-align: center;
 }
 
-section.secondary-section img {
-  max-height: 185px;
-  max-width: 185px;
-}
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
     url("../img/calathea.jpg");
@@ -96,7 +92,7 @@ main {
 }
 
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 
@@ -147,8 +143,20 @@ main p {
   margin-top: 30px;
 }
 
+.card-header.grid {
+  grid-gap: 0;
+}
 .card-body {
   padding: 30px;
+}
+
+.embed {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.instagram-embeds {
+  margin: 30px;
 }
 
 .btn {
@@ -185,6 +193,7 @@ footer p {
   line-height: 24px;
   opacity: 0.7;
   margin-right: 20px;
+  opacity: 0.5;
 }
 
 footer ul {
@@ -198,7 +207,13 @@ footer li {
 
 footer a {
   color: white;
-  opacity: 0.7;
+  opacity: 0.5;
+}
+
+.codedby {
+  text-align: center;
+  opacity: 0.4;
+  font-size: 12px;
 }
 @media (max-width: 960px) {
   header {
@@ -216,5 +231,11 @@ footer a {
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 32px;
+  }
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16 / 9;
   }
 }
