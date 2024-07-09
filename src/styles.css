@@ -234,10 +234,13 @@ footer a {
     grid-template-columns: 1fr;
     grid-gap: 32px;
   }
-  .card-header img {
+  .card-header iframe {
     display: none;
   }
   .embed {
     aspect-ratio: 16 / 9;
+  }
+  .instagram-embeds {
+    display: block;
   }
 }
